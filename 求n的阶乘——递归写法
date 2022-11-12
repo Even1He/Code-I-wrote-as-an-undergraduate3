@@ -1,0 +1,23 @@
+```
+#include<iostream>
+using namespace std;
+
+int fact(int n)
+{
+	if (n == 1||n==0)
+	{
+		return 1;
+	}
+	else if (n > 1)
+	{
+		return n * fact(n - 1);		//这里是n-1,所以一定要考虑n=1这个边界值//
+	}
+}
+int main()
+{
+	int n;
+	cin >> n;
+	cout << fact(n);
+	return 0;
+}
+```
